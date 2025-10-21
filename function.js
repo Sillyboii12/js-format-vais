@@ -1,9 +1,12 @@
 function intSequence(first, last) {
+    let output = "";
     for (let i = first; i <= last; i++) {
-        console.log(i+ ",");
+        output += i;
+        if (i < last) {
+            output += ",";
+        }
     }
+    console.log(output);
 }
 
-intSequence(5,8);
-intSequence(1,10);
-intSequence(7,16);
+intSequence(5,8)
